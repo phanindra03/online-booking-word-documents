@@ -1,0 +1,44 @@
+1. create table account_master(Account_ID NUMBER(10), Account_Type VARCHAR2(25), Account_Balance NUMBER(15) ,Open_Date DATE Default sysdate);
+2. insert into  account_master values(123456789,'current',987456123,'02-feb-2019');
+3.
+4.
+5.
+
+
+
+
+1create table customer(Account_ID NUMBER(10) , customername VARCHAR2(50),address varchar(30),custermobnum number(10),Email VARCHAR2(30),accounttype varchar(15),openingbalance number(15), Pancard VARCHAR2(15));
+2.insert into  customer values(123456789,'current','Ar@gamil.com','karimnagar','aydhd1234');
+3.
+4.
+5.
+
+1.create table transactions(Transaction_ID NUMBER(10) ,Tran_description VARCHAR2(100), DateofTransaction DATE , TransactionType VARCHAR2(20), TranAmount NUMBER(15) ,Account_No NUMBER(10));
+2.insert into  transactions values(12345,'current','14-nov-2018','karimnagar',1234,789456123);
+3.
+4.
+5.
+
+1. create table service_tracker(Service_ID NUMBER(10), Service_Description VARCHAR2(100),Account_ID NUMBER(10), Service_Raised_Date DATE ,Service_status VARCHAR2(20));
+2. insert into  service_tracker values(12345,'current','12333','14-nov-2018','karimnagar');
+3.
+4.
+5.
+
+1.create table user_table(Account_ID NUMBER(10) ,user_id NUMBER(10),login_password VARCHAR2(15),secret_question VARCHAR2(50),Transaction_password VARCHAR2(15),lock_status VARCHAR2(1));
+2.insert into  user_table values(12345,12345,'aravind','cricket','ara@1996','y');
+3.
+4.
+5.
+
+1.create table Fund_transfer(FundTransfer_ID NUMBER(10),Account_ID NUMBER(10) ,Payee_Account_ID NUMBER(10), Date_Of_Transfer DATE, Transfer_Amount NUMBER(15));
+2.insert into  fund_transfer values(12345,12345,12345,'10-dec-2019',12345);
+3.
+4.
+5.
+
+1.create table payee_table(Account_Id NUMBER(10),Payee_Account_Id NUMBER, Nick_name VARCHAR2(40));
+2.insert into  payee_table values(12345,12345,'ara');
+3.
+4.
+5.
